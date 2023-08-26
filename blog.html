@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero-Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js" defer></script>
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    <script src="./noChange.js" defer></script>
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="container mx-auto grid justify-items-center">
+    <header>
+        <h1 class="underline underline-offset-1 text-5xl m-8">Welcome to the Blog</h1>
+    </header>
+    <main>
+        <section class="text-justify m-7 text-2xl">
+            <ol>
+                <li>
+                    <h3>1. What is the difference between map, forEach, filter and find?</h3>
+                    <br>
+                    <p class="text-xl">Answer: <br>
+                        map: Transforms each element of an array and returns a new array with the same length.
+                        forEach: Executes a provided function on each array element, but doesn't modify the array or
+                        return a new one.
+                        filter: Creates a new array containing elements that pass a provided condition.
+                        find: Returns the first array element that satisfies a condition, or undefined if none do.
+                    </p>
+                </li>
+                <li>
+                    <h3>2. What is the difference local storage, season storage and cookies?</h3>
+                    <br>
+                    <p class="text-xl">Answer: <br>
+                        Local Storage: It's a web storage mechanism that allows websites to store data as key-value
+                        pairs in a user's web browser. The data persists even after the browser is closed and can be
+                        accessed on subsequent visits to the same website. Local storage provides more storage space
+                        compared to cookies but is limited to the specific domain.
+
+                        Session Storage: Similar to local storage, session storage also stores data as key-value pairs
+                        in a user's browser. However, the data is only available for the duration of the browser
+                        session. Once the user closes the browser or tab, the session storage data is cleared.
+
+                        Cookies: Cookies are small pieces of data stored in a user's browser by websites. They are often
+                        used to store user-specific information like login sessions, preferences, and tracking data.
+                        Cookies have an expiration date and can be set to persist across browser sessions. They have
+                        size limitations compared to local storage and session storage.
+
+                        All three mechanisms are used for client-side data storage but serve different purposes and have
+                        varying capabilities and limitations.
+                    </p>
+                </li>
+                <li>
+                    <h3>3. How Eventloop works in Javascript/ES6?</h3>
+                    <br>
+                    <p class="text-xl">Answer: <br>
+                        The event loop in JavaScript manages the order of execution for asynchronous tasks. It maintains
+                        a call stack for function execution, a callback queue for completed tasks, and utilizes
+                        microtasks (like promises) to prioritize certain tasks. This enables non-blocking behavior,
+                        efficient handling of I/O operations, and ensures responsive web applications.
+                    </p>
+                </li>
+
+            </ol>
+        </section>
+    </main>
+</body>
+
+</html>
