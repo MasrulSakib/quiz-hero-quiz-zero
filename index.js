@@ -180,4 +180,9 @@ document.querySelector("#submit").addEventListener("click", () => {
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
+
 });
+
+const blogDisplay = () => {
+  window.location.href = "http://127.0.0.1:5500/blog.html";
+}

@@ -33,60 +33,103 @@
     </script>
 </head>
 
-<body class="container mx-auto grid justify-items-center">
+<body class="container mx-auto grid justify-items-center bg-slate-100 font-common">
     <header>
-        <h1 class="underline underline-offset-1 text-5xl m-8">Welcome to the Blog</h1>
+        <h1 class="underline underline-offset-1 text-5xl m-8 font-semibold text-cyan-700">Welcome to the Blog</h1>
     </header>
     <main>
         <section class="text-justify m-7 text-2xl">
             <ol>
-                <li>
-                    <h3>1. What is the difference between map, forEach, filter and find?</h3>
+                <li class="my-5">
+                    <h3 class="text-violet-500 font-medium">1. What is the difference between map, forEach, filter and
+                        find?</h3>
                     <br>
-                    <p class="text-xl">Answer: <br>
-                        map: Transforms each element of an array and returns a new array with the same length.
-                        forEach: Executes a provided function on each array element, but doesn't modify the array or
-                        return a new one.
-                        filter: Creates a new array containing elements that pass a provided condition.
-                        find: Returns the first array element that satisfies a condition, or undefined if none do.
+                    <p class="text-xl">
+                        <span class="underline decoration-double">map:</span> Transforms each element of an array and
+                        returns a new array with the same
+                        length. <br>
+                        <span class="underline decoration-double">forEach:</span> Executes a provided function on each
+                        array element, but doesn't modify the
+                        array or
+                        return a new one. <br>
+                        <span class="underline decoration-double">filter:</span> Creates a new array containing elements
+                        that pass a provided condition.
+                        <br>
+                        <span class="underline decoration-double">find:</span> Returns the first array element that
+                        satisfies a condition, or undefined if
+                        none do.
                     </p>
                 </li>
-                <li>
-                    <h3>2. What is the difference local storage, season storage and cookies?</h3>
+                <li class="mb-5">
+                    <h3 class="text-violet-500 font-medium">2. What is the difference local storage, season storage and
+                        cookies?</h3>
                     <br>
-                    <p class="text-xl">Answer: <br>
-                        Local Storage: It's a web storage mechanism that allows websites to store data as key-value
+                    <p class="text-xl">
+                        <span class="underline decoration-double">Local Storage:</span> It's a web storage mechanism
+                        that allows websites to store data as
+                        key-value
                         pairs in a user's web browser. The data persists even after the browser is closed and can be
                         accessed on subsequent visits to the same website. Local storage provides more storage space
-                        compared to cookies but is limited to the specific domain.
+                        compared to cookies but is limited to the specific domain. <br>
 
-                        Session Storage: Similar to local storage, session storage also stores data as key-value pairs
+                        <span class="underline decoration-double">Session Storage:</span> Similar to local storage,
+                        session storage also stores data as
+                        key-value pairs
                         in a user's browser. However, the data is only available for the duration of the browser
-                        session. Once the user closes the browser or tab, the session storage data is cleared.
+                        session. Once the user closes the browser or tab, the session storage data is cleared. <br>
 
-                        Cookies: Cookies are small pieces of data stored in a user's browser by websites. They are often
+                        <span class="underline decoration-double">Cookies:</span> Cookies are small pieces of data
+                        stored in a user's browser by websites.
+                        They are often
                         used to store user-specific information like login sessions, preferences, and tracking data.
                         Cookies have an expiration date and can be set to persist across browser sessions. They have
-                        size limitations compared to local storage and session storage.
+                        size limitations compared to local storage and session storage. <br>
 
                         All three mechanisms are used for client-side data storage but serve different purposes and have
                         varying capabilities and limitations.
                     </p>
                 </li>
-                <li>
-                    <h3>3. How Eventloop works in Javascript/ES6?</h3>
+                <li class="mb-5">
+                    <h3 class="text-violet-500 font-medium">3. How Eventloop works in Javascript/ES6?</h3>
                     <br>
-                    <p class="text-xl">Answer: <br>
+                    <p class="text-xl">
                         The event loop in JavaScript manages the order of execution for asynchronous tasks. It maintains
                         a call stack for function execution, a callback queue for completed tasks, and utilizes
                         microtasks (like promises) to prioritize certain tasks. This enables non-blocking behavior,
                         efficient handling of I/O operations, and ensures responsive web applications.
                     </p>
                 </li>
+                <li class="mb-5">
+                    <h3 class="text-violet-500 font-medium">4. Explain how quizTimer function works?</h3>
+                    <br>
+                    <p class="text-xl"> The quizTimer function takes a dismiss parameter. If dismiss
+                        is true, the function stops a previously set interval timer using clearInterval(timer). If
+                        dismiss is false, no action is taken. This mechanism allows the function to either dismiss or
+                        maintain the timer based on the value of dismiss.
+
+                    </p>
+                </li>
+                <li class="mb-5">
+                    <h3 class="text-violet-500 font-medium">5. Explain how chooseQuiz function works?</h3>
+                    <br>
+                    <p class="text-xl">
+                        The chooseQuiz function handles the selection of quiz answers. It checks if an answer exists for
+                        a given quiz index. If it does, the existing answer is replaced with a new one. If not, a new
+                        answer is created and added to the answers array. The function then triggers the display of
+                        answers, likely in a UI. This mechanism allows users to interactively choose answers for quiz
+                        questions.
+
+                    </p>
+                </li>
 
             </ol>
         </section>
     </main>
+    <!-- Footer section start -->
+    <footer class="py-10 text-center text-sm">
+        Copyright © 2023 Quiz Hero All Rights Reserved.
+    </footer>
+    <!-- Footer section end -->
 </body>
 
 </html>
